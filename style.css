@@ -1,46 +1,49 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.head {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.head-img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.head .head-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { text-align: center;
+  .head { 
+    text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main  {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
+.tasklist-item,
 .task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
 
-.task-row-wrapper {
+.new-task-wrapper{
     display: flex;
+    margin-top: 20px;
 }
 
 .tasklist {
