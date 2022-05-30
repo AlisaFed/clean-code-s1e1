@@ -24,7 +24,7 @@ body {
 
   .aaa { text-align: center;
   }
-  
+
 }
 
 .centered-main-page-element {
@@ -43,17 +43,18 @@ body {
     display: flex;
 }
 
-ul {
+.tasklist {
     margin: 0;
     padding: 0px;
 }
 
-li, h3 {
+.tasklist-items {
     list-style: none;
 }
 
-input,
-button{
+.task,
+.tasklist-check,
+button {
     outline: none;
 }
 
@@ -72,8 +73,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.main-head {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +83,7 @@ label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.task {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -96,22 +96,16 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.task:focus {
     color: #333;
 }
 
-/* New Task */
-label[for="new-task"] {
-    display: block;
-    margin: 0 0 20px;
-}
-
-input#new-task {
+.new-task-input {
     width: 318px;
 }
 
 /* Task list */
-li {
+.tasklist-items {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -121,51 +115,51 @@ li {
     align-items: center;
 }
 
-li > * {
+.tasklist-items > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasklist-check {
     margin: 0 10px;
 }
 
-li > label {
+.tasklist-item {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li >    input[type="text"] {
+.tasklist-in {
     width: 226px
 }
 
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.main-completed-tasks .tasklist-item {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasklist-in {
     display: none
 }
 
-ul li.editMode input[type=text] {
+.tasklist-items-edit .tasklist-in {
     display: inline-block;
     width: 224px
 }
 
-ul li.editMode label {
+.tasklist-items-edit .tasklist-item {
     display: none;
 }
