@@ -34,14 +34,14 @@
     margin: 0 auto 0;
 }
 
-.tasklist-item,
-.task {
+.task,
+.tasklist-item {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.new-task-wrapper{
+.new-task-wrapper {
     display: flex;
     margin-top: 20px;
 }
@@ -57,11 +57,11 @@
 
 .task,
 .tasklist-check,
-button {
+.button {
     outline: none;
 }
 
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -71,7 +71,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     color: #3a3A3a;
 }
 
