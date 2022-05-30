@@ -154,14 +154,14 @@ button:hover {
 
 /* Edit Task */
 .tasklist-in {
-    display: none;
+  display: none;
 }
 
 .tasklist-items-edit .tasklist-in {
-    display: inline-block;
-    width: 224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .tasklist-items-edit .tasklist-item {
-    display: none;
+  display: none;
 }
